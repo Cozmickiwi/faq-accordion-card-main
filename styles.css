@@ -1,0 +1,160 @@
+
+
+@font-face {
+    font-family: Kumbh;
+    src: url(fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    font-size: 12px;
+}
+
+.mainContainer {
+    width: 65%;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.24);
+    display: flex;
+    font-family: Kumbh;
+}
+
+.imageContent {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.faqContent {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 160%;
+    min-width: 160%;
+    height: 90%;
+    padding-right: 10%;
+    padding-top: 20%;
+    top: 10%;
+    
+}
+
+#womanDesktop {
+    position: relative;
+    z-index: 2;
+    left: -20%;
+    height: 70%;
+    top: 15%;
+    
+}
+
+#bgpDesktop{
+    position: relative;
+    height: 130vh;
+    z-index: 0;
+    bottom: 130%;
+    left: -130%;
+}
+
+.content {
+    display: none;
+    background-color: rgba(161, 161, 161, 0.124);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#faq {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 10%;
+    position: fixed;
+    top: 20%;
+}
+
+.heading {
+    font-weight: 400;
+    font-size: .85rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+}
+.arrow {
+    position: absolute;
+    right: 25%;
+    margin-top: 5px;
+}
+.visually-hidden {
+    position: absolute;
+    top: -25%;
+    opacity: 0;
+    
+}
+
+#toggle1:checked ~ .div1{
+    top: 35%;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+#toggle1:checked + .div2{
+    visibility: visible;
+}
+.div1{
+    visibility: visible;
+    max-width: 200px;
+}
+
+#toggle2:checked ~ .div2{
+    top: 35%;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+.div2 {
+    visibility: visible;
+    max-width: 200px;
+}
+
+#toggle3:checked ~ .div3{
+    top: 35%;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    
+}
+
+.div3 {
+    visibility: visible;
+    max-width: 200px;
+}
+
+#toggle4:checked ~ .div4{
+    top: 35%;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+.div4 {
+    visibility: visible;
+    max-width: 200px;
+}
+
+#toggle5:checked ~ .div5{
+    top: 35%;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+}
+
+.div5 {
+    visibility: visible;
+    max-width: 200px;
+}

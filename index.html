@@ -3,38 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+<!--First create the main container and center it to the middle of screen with ideal margin-->
+<!--Next add ALL of the text to html (including drop down text, which will be set to display-none)-->
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+  <div class="mainContainer">
+    <div class="imageContent">
+      <img src="images/illustration-woman-online-desktop.svg" alt="woman-desktop" id="womanDesktop">
+      <img src="images/bg-pattern-desktop.svg" alt="background-pattern" id="bgpDesktop">
+    </div>
+    <form>
+    <div class="faqContent">
+      <h1 class="mainHeading" id="faq">FAQ</h1>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+      <label for="toggle1"><h2 class="heading" id="heading1">How many team members can I invite? <img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow" id="arrow1"></h2></label>
+      <input type="checkbox" id="toggle1" class="visually-hidden" checked>
+      <div class="div1">
+        <p class="content" id="content1" style="display: block; width: 160%;">
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
+          </p>
+      </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+      <label for="toggle2"><h2 class="heading" id="heading2">What is the maximum file upload size?<img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow" id="arrow1"></h2></label>
+      <input type="checkbox" id="toggle2" class="visually-hidden" checked>
+      <div class="div2">
+        <p class="content" id="content2" style="display: block; width: 160%;">
+          No more than 2GB. All files in your account must fit your allotted storage space.
+        </p>
+      </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      <label for="toggle3"><h2 class="heading" id="heading3">How do I reset my password?<img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow" id="arrow1"></h2></label>
+      <input type="checkbox" id="toggle3" class="visually-hidden" checked>
+      <div class="div3">
+        <p class="content" id="content3" style="display: block; width: 160%;">
+          Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
+        </p>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <label for="toggle4"><h2 class="heading" id="heading4">Can I cancel my subscription?<img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow" id="arrow1"></h2></label>
+      <input type="checkbox" id="toggle4" class="visually-hidden" checked>
+      <div class="div4">
+        <p class="content" id="content4" style="display: block; width: 160%;">
+          Yes! Send us a message and we'll process your request no questions asked.
+        </p>
+      </div>
+
+      <label for="toggle5"><h2 class="heading" id="heading5">Do you provide additional support?<img src="images/icon-arrow-down.svg" alt="arrow-down" class="arrow" id="arrow1"></h2></label>
+      <input type="checkbox" id="toggle5" class="visually-hidden" checked>
+      <div class="div5">
+        <p class="content" id="content5" style="display: block; width: 160%;">
+          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+        </p>
+      </div>
+      
+      </form>
+    </div>
+    
   </div>
+
 </body>
 </html>
