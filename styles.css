@@ -18,12 +18,13 @@ body {
 .box {
     position: relative;
     width: 190px;
-    left: 97px;
+    left: -472px;
     top: 35px;
     z-index: 3;
 }
 
 .mainContainer {
+    position: absolute;
     width: 950px;
     height: 550px;
     background-color: white;
