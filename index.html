@@ -8,54 +8,46 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 </head>
 <body>
-<!--First create the main container and center it to the middle of screen with ideal margin-->
-<!--Next add ALL of the text to html (including drop down text, which will be set to display-none)-->
-
+<img src="images/illustration-box-desktop.svg" alt="illustration-box-desktop" class="box">
   <div class="mainContainer">
     <div class="imageContent">
       <img src="images/illustration-woman-online-desktop.svg" alt="woman-desktop" id="womanDesktop">
       <img src="images/bg-pattern-desktop.svg" alt="background-pattern" id="bgpDesktop">
     </div>
     <form>
-     
     <div class="faqContent">
       <h1 class="mainHeading" id="faq">FAQ</h1>
       <section class="accordionContent">
       <div class="accordion">
        <input type="radio" id="toggle1" name="accordion1" class="visually-hidden" >
-        <label for="toggle1" class="heading">How many team members can I invite?</label>
+        <label for="toggle1" class="heading"><button class="closeButton" type="reset">x</button>How many team members can I invite? </label>
         <div class="div1">
           <p class="content" id="content1">
               You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
             </p>
         </div>
       </div>
-
       <div class="accordion">
         <input type="radio" id="toggle2" name="accordion1" class="visually-hidden" >
-        <label for="toggle2" id="heading2" class="heading">What is the maximum file upload size?</label>
-        
+        <label for="toggle2" id="heading2" class="heading"><button class="closeButton" type="reset">x</button>What is the maximum file upload size? </label>
         <div class="div1">
           <p class="content" id="content2">
             No more than 2GB. All files in your account must fit your allotted storage space.
           </p>
         </div>
       </div>
-
       <div class="accordion">
         <input type="radio" id="toggle3" name="accordion1" class="visually-hidden" >
-        <label for="toggle3" class="heading">How do I reset my password?</label>
-        
+        <label for="toggle3" class="heading"><button class="closeButton" type="reset">x</button>How do I reset my password? </label>
         <div class="div1">
           <p class="content" id="content3">
             Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
           </p>
         </div>
       </div>
-
       <div class="accordion">
         <input type="radio" id="toggle4" name="accordion1" class="visually-hidden" >
-        <label for="toggle4" class="heading">Can I cancel my subscription?</label>
+        <label for="toggle4" class="heading"><button class="closeButton" type="reset">x</button>Can I cancel my subscription? </label>
         
         <div class="div1">
           <p class="content" id="content4">
@@ -63,11 +55,9 @@
           </p>
         </div>
       </div>
-
       <div class="accordion">
         <input type="radio" id="toggle5" name="accordion1" class="visually-hidden" >
-        <label for="toggle5" class="heading">Do you provide additional support?</label>
-        
+        <label for="toggle5" class="heading"> <button class="closeButton" type="reset">x</button>Do you provide additional support?</label>
         <div class="div1">
           <p class="content" id="content5">
             Chat and email support is available 24/7. Phone lines are open during normal business hours.
@@ -77,8 +67,6 @@
       </section>
       </form>
     </div>
-    
   </div>
-
 </body>
 </html>

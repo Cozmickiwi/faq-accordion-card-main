@@ -3,6 +3,7 @@
     src: url(fonts/KumbhSans-VariableFont_YOPQ\,wght.ttf);
 }
 
+@media (orientation: landscape) {
 body {
     display: flex;
     width: 100vw;
@@ -14,12 +15,20 @@ body {
     font-size: 12px;
 }
 
+.box {
+    position: absolute;
+    width: 190px;
+    left: 11.15%;
+    top: 42.5%;
+    z-index: 3;
+}
+
 .mainContainer {
     width: 65%;
     height: 70%;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.275);
     display: flex;
     font-family: Kumbh;
 }
@@ -42,13 +51,16 @@ body {
     top: 10%;
     
 }
+.accordionContent{
+    margin-top: 2%;
+}
 
 #womanDesktop {
     position: relative;
     z-index: 2;
     left: -20%;
     height: 70%;
-    top: 15%;
+    top: 13%;
     
 }
 
@@ -62,10 +74,10 @@ body {
 
 .content {
     min-width: 300px;
-    border-radius: 10px;
     font-size: .70rem;
     margin-bottom: 0px;
     font-weight: 400;
+    color: hsl(240, 6%, 50%);
 }
 
 #faq {
@@ -73,15 +85,16 @@ body {
     font-size: 2rem;
     margin-top: 0px;
     margin-bottom: 10%;
-    position: fixed;
-    top: 20%;
+    position: absolute;
+    top: 1%;
+    color: hsl(238, 29%, 16%);
 }
 
 .heading {
     font-weight: 400;
     font-size: .85rem;
     padding-bottom: 20px;
-    
+    color: hsl(237, 12%, 33%);
 }
 .arrow {
     position: absolute;
@@ -110,22 +123,218 @@ body {
     overflow: hidden;
 }
 .accordion {
-    max-width: 400px;
+    max-width: 385px;
     margin-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+    border-bottom: 1px solid hsl(240, 3%, 87%);
     padding-bottom: 20px;
 }
 
 .accordion input:checked + .heading{
     font-weight: 700;
 }
+.accordion input:checked + .heading > .closeButton{
+    font-weight: 700;
+    display: flex;
+}
 .heading::after {
     position: absolute;
     content: url(images/icon-arrow-down.svg);
-    right: 35%;
+    right: 38%;
     
 }
 .accordion input:checked + .heading::after{
     transform: rotate(180deg);
     transition: 0.3s;
 }
+
+.closeButton {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    border: 2px solid rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    width: 375px;
+    height: 55px;
+    font-size: xx-small;
+    background-color: rgba(128, 128, 128, 0.129);
+}
+button {
+    display: none;
+    opacity: 0;
+}
+
+.heading:hover {
+    color: hsl(14, 88%, 65%);
+}
+}
+@media (orientation: portrait) {
+    body {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+        font-size: 12px;
+    }
+    
+    .box {
+        position: absolute;
+        width: 95px;
+        left: 16%;
+        top: 12.5%;
+        z-index: 3;
+    }
+    
+    .mainContainer {
+        position: relative;
+        width: 90%;
+        height: 70%;
+        top: 3%;
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.275);
+        display: flex;
+        font-family: Kumbh;
+        justify-content: center;
+        
+        
+    }
+    
+    .imageContent {
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        right: 15%;
+        top: -20%;
+    }
+   
+
+    .faqContent {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 90%;
+        padding-top: 20%;
+        top: 22.5%;
+        min-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+    .accordionContent{
+        margin-top: 2%;
+    }
+    
+    #womanDesktop {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        
+        
+    }
+    
+    #bgpDesktop{
+        position: relative;
+        width: 100%;
+        top: -15%;
+    }
+    
+    .content {
+        max-width: 250px;
+        font-size: .70rem;
+        margin-bottom: 0px;
+        font-weight: 400;
+        color: hsl(240, 6%, 50%);
+    }
+    
+    #faq {
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 0px;
+        margin-bottom: 10%;
+        position: absolute;
+        top: 1%;
+        color: hsl(238, 29%, 16%);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .heading {
+        font-weight: 400;
+        font-size: .85rem;
+        padding-bottom: 20px;
+        color: hsl(237, 12%, 33%);
+    }
+
+    
+    .accordion input {
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+    }
+    
+    .div1{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.35s;
+        min-width: 280px;
+    }
+    
+    .accordion input:checked ~ .div1 {
+        max-height: 10rem;
+    }
+    
+    .accordionContent {
+        overflow: hidden;
+    }
+    .accordion {
+        margin-bottom: 15px;
+        border-bottom: 1px solid hsl(240, 3%, 87%);
+        padding-bottom: 15px;
+    }
+    
+    .accordion input:checked + .heading{
+        font-weight: 700;
+    }
+    .accordion input:checked + .heading > .closeButton{
+        font-weight: 700;
+        display: flex;
+    }
+    .heading::after {
+        position: absolute;
+        content: url(images/icon-arrow-down.svg);
+        right: 2%;
+        
+    }
+    .accordion input:checked + .heading::after{
+        transform: rotate(180deg);
+        transition: 0.3s;
+    }
+    
+    .closeButton {
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+        border: 2px solid rgba(0, 0, 0, 0.459);
+        border-radius: 10px;
+        width: 300px;
+        height: 55px;
+        font-size: xx-small;
+        background-color: rgba(128, 128, 128, 0.129);
+    }
+    button {
+        display: none;
+        opacity: 0;
+    }
+    
+    .heading:hover {
+        color: hsl(14, 88%, 65%);
+    }
+    }
+    
+    
