@@ -131,9 +131,9 @@ body {
 
 .accordion input:checked + .heading{
     font-weight: 700;
+    color: hsl(238, 29%, 16%);
 }
 .accordion input:checked + .heading > .closeButton{
-    font-weight: 700;
     display: flex;
 }
 .heading::after {
